@@ -9,7 +9,7 @@
 
     <!-- NuGet パッケージ設定 -->
     <PackageId>AiImageMetadataReader</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>kawa0x0A</Authors>
     <Description>A lightweight async library for reading AI-generated image metadata from PNG and JPEG files. Supports Stable Diffusion (AUTOMATIC1111/WebUI), NovelAI, ComfyUI, and C2PA-compatible tools (ChatGPT/DALL-E).</Description>
     <PackageTags>png;jpeg;metadata;stable-diffusion;novelai;comfyui;ai;image;c2pa;async</PackageTags>
