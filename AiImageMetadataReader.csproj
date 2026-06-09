@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- ビルド設定 -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- NuGet パッケージ設定 -->
+    <PackageId>AiImageMetadataReader</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>kawa0x0A</Authors>
+    <Description>A lightweight async library for reading AI-generated image metadata from PNG and JPEG files. Supports Stable Diffusion (AUTOMATIC1111/WebUI), NovelAI, ComfyUI, and C2PA-compatible tools (ChatGPT/DALL-E).</Description>
+    <PackageTags>png;jpeg;metadata;stable-diffusion;novelai;comfyui;ai;image;c2pa;async</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/kawa0x0A/AiImageMetadataReader</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kawa0x0A/AiImageMetadataReader</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- シンボルパッケージ（デバッグ用） -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <!-- ソースリンク（デバッグ時にソースへジャンプできるようにする） -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
